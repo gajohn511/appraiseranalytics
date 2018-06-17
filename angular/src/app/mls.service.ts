@@ -4,9 +4,8 @@ import {
   AngularFirestoreCollection,
   AngularFirestoreDocument
 } from "angularfire2/firestore";
-import { Observable } from "rxjs/Observable";
+import { Observable ,  of } from "rxjs";
 import "rxjs/add/operator/map";
-import { of } from "rxjs/observable/of";
 
 // local imports
 import "./models/mls";
@@ -50,6 +49,7 @@ export class MlsService {
           return resolve(data);
         })
         .catch((err) => {
+          debugger;
           console.log(err);
           reject(err);
         });

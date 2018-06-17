@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 
-import { Observable } from "rxjs/Observable";
+import { Observable, of, Subject } from "rxjs";
+// import { debounceTime } from "rxjs/operators";
+
 import "rxjs/add/operator/map";
-import { of } from "rxjs/observable/of";
-import { Subject } from "rxjs/Subject";
 import "rxjs/add/operator/debounceTime";
 
 import "../models/mls";

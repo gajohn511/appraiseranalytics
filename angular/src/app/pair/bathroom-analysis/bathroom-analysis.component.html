@@ -78,9 +78,9 @@
       </div>
     </div>
 
-    <div class="row justify-content-md-center bd" [hidden]="consoleMsg.length === 0">
+    <div class="row justify-content-md-center bd" [hidden]="!(consoleMsg | async)">
       <div class="col-md-auto">
-        console: {{ consoleMsg }}
+        {{ consoleMsg | async }}
       </div>
     </div>
 

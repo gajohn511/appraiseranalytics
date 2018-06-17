@@ -1,19 +1,19 @@
 interface MLS {
   batchid: Number;
   address: string;
-  beds: Number;
+  beds: number;
   closingDate: Date;
   contributions: Number;
   design: String;
   distance: Number;
   dom: Number;
-  fbaths: Number;
+  fbaths: number;
   folio: String;
   garage: Number;
   gla: number;
   hbaths: Number;
   listDate: Date;
-  mls: String;
+  mls: string;
   neighborhood: String;
   pendingDate: Date;
   pool: Number;
